@@ -1,0 +1,47 @@
+
+h4{
+  font-size: 30px;
+}
+
+.container--contact {
+  display: flex;
+  justify-content: center;
+  padding: 150px;
+}
+
+.container--contact__form {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  align-items: center;
+}
+
+.form__controls {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  font-family: var(--principalfont);
+  font-size: 18px;
+  border: 1px solid rgb(226, 226, 226);
+  background-color:  rgb(249 249 249);
+}
+
+.form__button {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  font-family: var(--principalfont);
+  margin: 16px 0;
+  font-size: 18px;
+  background-color: #F4503E;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: #121A2D;
+}
