@@ -1,0 +1,347 @@
+:root {
+--principalcolor:#F4503E;
+--secundarycolor:#121A2D;
+--complementcolor:#F7E7E7;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family:'DM Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+/*Main class container*/
+
+.container {
+  margin: 0;
+}
+  
+/*Header Section*/
+  
+.header {
+  padding: 30px 0px 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+  
+.header li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+  
+.header li a {
+  color: #333;
+  margin:0;
+  border:0px;
+}
+  
+.header ul {
+  text-align: right;
+  font-weight: 700;
+}
+  
+.header__logo {
+  width: 125px;
+}
+
+/*Jumbotron Section*/
+  
+.jumbotron {
+  background-color: #fff;
+  max-width: 1200px;
+  margin-left: 50px;
+}
+  
+.jumbotron h2 {
+  font-size: 50px;
+  margin-bottom: 70px;
+}
+  
+.jumbotron h2 span {
+  color:var(--principalcolor);
+}
+
+/*Banner Section*/
+
+.banner {
+  background-color: var(--complementcolor);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+}
+  
+/*container blue Section*/
+
+.container__blue__title {
+    padding: 20px;
+    background-color: var(--secundarycolor);
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+
+/*our service*/
+
+.services {
+  background-image: url("../asset/img/backgroungranrun.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services--center {
+  display:flex;
+  justify-content:center;
+}
+  
+.services--row {
+  display:inline-flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+  margin: 50px;
+}
+
+.services--categories {
+  margin: 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services--categories  h2 {
+  color: var(--complementcolor);
+  font-size: 30px;
+}
+
+#categorie1 {
+  background-image: url("../asset/img/delevery.jpg");
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+}
+
+#categorie2 {
+  background-image: url("../asset/img/shippements.jpg");
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+}
+
+#categorie3 {
+  background-image: url("../asset/img/paking.jpg");
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+}
+
+/*container description*/
+
+.container--description {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 90px 150px;
+  gap: 50px;
+  
+}
+
+.container--description h2 span {
+  color:var(--principalcolor);
+}
+
+.container--description h2 {
+  font-size: 50px;
+}
+
+.container--description p {
+  font-size: 20px;
+
+}
+
+.container--description img {
+  width: 350px;
+  height: auto;
+}
+
+/*container  class imagen*/
+
+.container--imagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container--imagen h2 {
+  font-size: 50px;
+
+}
+.container--imagen p {
+  font-size: 20px;
+  padding: 0px 100px;
+}
+
+.container--imagen img {
+  width: 80%;
+}
+
+/*container overlay*/
+
+.container--overlay {
+  position: relative;
+  background-image: url("../asset/img/banner-hero.jpg");
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container--overlay::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  opacity: .5;
+}
+
+.container--overlay__content {
+  text-align:center;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  height: auto;
+  margin-top: 200px;
+  font-size: 1.5em;
+}
+  
+.container--overlay__button {
+  color: var(--complementcolor);
+  padding: 10px;
+  border: #F7E7E7 solid 2px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.container--overlay__button:hover {
+  background-color: var(--principalcolor);
+  border: var(--principalcolor) solid 2px;
+  color: var(--complementcolor);
+  padding: 10px;
+  border-radius: 40px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+/*Footer Section*/
+
+.footer {
+  padding: 100px 0px;
+  background-color: var(--secundarycolor);
+  color: #fff;
+}
+  
+.footer h3 {
+  font-size: 20px;
+  margin-left: 20px;
+}
+  
+.footer p {
+  font-size:14px;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+/* tablets medias */
+
+  @media only screen and (min-width: 768px) and (max-width: 1213px) {
+
+    .container--description {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 50px;    
+    }
+
+    .container--description h2 {
+      font-size: 36px;
+    }
+    
+    .container--description p {
+      font-size: 18px;
+      max-width: 320px;
+    
+    } 
+
+    .services--categories  h2 {
+      font-size: 20px;
+    }
+
+    #categorie1 {
+      background-image: url("../asset/img/delevery.jpg");
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+    }
+    
+    #categorie2 {
+      background-image: url("../asset/img/shippements.jpg");
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+    }
+    
+    #categorie3 {
+      background-image: url("../asset/img/paking.jpg");
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+/*mobile medias*/
+
+  @media only screen and (min-width: 400px) and (max-width: 767px) {
+
+    .jumbotron h2 {
+      font-size: 1.2rem;
+      margin-bottom: 70px;
+    }
+
+    .container__blue__title {
+      padding-bottom: 50px;
+    }
+
+    .services--row {
+      display:flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      margin: 50px;
+      justify-content: center;
+    }
+    
+    .container--description {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 50px;
+      
+    }
+
+    .container--imagen p {
+      font-size: 20px;
+      padding: 0px 30px;
+    }
+
+    .container--overlay__content {
+      font-size: 1rem;
+    }
+}
