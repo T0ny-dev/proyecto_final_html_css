@@ -260,7 +260,7 @@ html, body {
 
 /* tablets medias */
 
-  @media only screen and (min-width: 768px) and (max-width: 1213px){
+  @media only screen and (min-width: 901px) and (max-width: 1213px) {
 
     .container--description {
       display: flex;
@@ -308,7 +308,7 @@ html, body {
 
 /*mobile medias*/
 
-  @media only screen and (min-width: 350px) and (max-width: 767px){
+  @media only screen and (min-width: 400px) and (max-width: 900px) {
 
     .header li {
       list-style:none;
@@ -350,5 +350,4 @@ html, body {
     .container--overlay__content {
       font-size: 1rem;
     }
-
 }
