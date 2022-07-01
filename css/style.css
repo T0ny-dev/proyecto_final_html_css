@@ -1,8 +1,14 @@
-  
+:root {
+--principalcolor:#F4503E;
+--secundarycolor:#121A2D;
+--complementcolor:#F7E7E7;
+}
+
 html, body {
   margin: 0;
   padding: 0;
   font-family:'DM Sans', sans-serif;
+  box-sizing: border-box;
 }
 
 /*Main class container*/
@@ -54,13 +60,13 @@ html, body {
 }
   
 .jumbotron h2 span {
-  color:#F4503E;
+  color:var(--principalcolor);
 }
 
 /*Banner Section*/
 
 .banner {
-  background-color: #F7E7E7;
+  background-color: var(--complementcolor);
   color: rgb(0, 0, 0);
   padding: 20px;
   text-align: center;
@@ -70,7 +76,7 @@ html, body {
 
 .container__blue__title {
     padding: 20px;
-    background-color: #121A2D;
+    background-color: var(--secundarycolor);
     margin: 0;
     text-align: center;
     color: #fff;
@@ -106,7 +112,7 @@ html, body {
 }
 
 .services--categories  h2 {
-  color: #F7E7E7;
+  color: var(--complementcolor);
   font-size: 30px;
 }
 
@@ -142,7 +148,7 @@ html, body {
 }
 
 .container--description h2 span {
-  color:#F4503E;
+  color:var(--principalcolor);
 }
 
 .container--description h2 {
@@ -213,7 +219,7 @@ html, body {
 }
   
 .container--overlay__button {
-  color: #F7E7E7;
+  color: var(--complementcolor);
   padding: 10px;
   border: #F7E7E7 solid 2px;
   border-radius: 20px;
@@ -223,9 +229,9 @@ html, body {
 }
 
 .container--overlay__button:hover {
-  background-color: #F4503E;
-  border: #F4503E solid 2px;
-  color: #F7E7E7;
+  background-color: var(--principalcolor);
+  border: var(--principalcolor) solid 2px;
+  color: var(--complementcolor);
   padding: 10px;
   border-radius: 40px;
   text-decoration: none;
@@ -236,8 +242,8 @@ html, body {
 /*Footer Section*/
 
 .footer {
-  padding: 200px 0px;
-  background-color: #121A2D;
+  padding: 100px 0px;
+  background-color: var(--secundarycolor);
   color: #fff;
 }
   
@@ -247,14 +253,14 @@ html, body {
 }
   
 .footer p {
-  font-size:12px;
+  font-size:14px;
   margin-bottom: 0;
   margin-left: 20px;
 }
 
 /* tablets medias */
 
-  @media only screen and (min-width: 768px) and (max-width: 1213px){
+  @media only screen and (min-width: 768px) and (max-width: 1213px) {
 
     .container--description {
       display: flex;
@@ -275,26 +281,25 @@ html, body {
     } 
 
     .services--categories  h2 {
-      color: #F7E7E7;
       font-size: 20px;
     }
 
     #categorie1 {
-      background-image: url("../img/delevery.jpg");
+      background-image: url("../asset/img/delevery.jpg");
       background-size: cover;
       width: 200px;
       height: 200px;
     }
     
     #categorie2 {
-      background-image: url("../img/shippements.jpg");
+      background-image: url("../asset/img/shippements.jpg");
       background-size: cover;
       width: 200px;
       height: 200px;
     }
     
     #categorie3 {
-      background-image: url("../img/paking.jpg");
+      background-image: url("../asset/img/paking.jpg");
       background-size: cover;
       width: 200px;
       height: 200px;
@@ -303,11 +308,15 @@ html, body {
 
 /*mobile medias*/
 
-  @media only screen and (min-width: 400px) and (max-width: 767px){
+  @media only screen and (min-width: 400px) and (max-width: 767px) {
 
     .jumbotron h2 {
       font-size: 1.2rem;
       margin-bottom: 70px;
+    }
+
+    .container__blue__title {
+      padding-bottom: 50px;
     }
 
     .services--row {
@@ -335,4 +344,4 @@ html, body {
     .container--overlay__content {
       font-size: 1rem;
     }
-  }
+}
